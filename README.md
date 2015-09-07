@@ -1,9 +1,9 @@
 User Stories
 ------------
 ```
-As a player
+<!-- As a player
 So that I can prepare for the game
-I would like to place a ship in a board location
+I would like to place a ship in a board location -->
 
 As a player
 So that I can play a more interesting game
@@ -41,3 +41,14 @@ As a player
 So that I can play against a human opponent
 I would like to play a two-player game
 ```
+
+| *Objects*           | *Messages*           |
+| :-----------------: | :------------------: |
+| Player              |                      |
+| Ship                | place_ship(board_location)|
+| Ship                | choose_size          |
+| Ship                | up/across            |
+| Board               |                      |
+| Airport             | allow_take_off       |
+| Airport             | allow_land           |
+| Airport             | weather(stormy/sunny)|
