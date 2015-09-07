@@ -1,54 +1,52 @@
 User Stories
 ------------
 ```
-<!-- As a player
+As a player
 So that I can prepare for the game
-I would like to place a ship in a board location -->
+I would like to place a ship in a board location
 
-As a player
+<!-- As a player
 So that I can play a more interesting game
-I would like to have a range of ship sizes to choose from
+I would like to have a range of ship sizes to choose from -->
 
-As a player
+<!-- As a player
 So that I can create a layout of ships to fox my opponent
-I would like to be able to choose the directions my ships face in
+I would like to be able to choose the directions my ships face in -->
 
-As a player
+<!-- As a player
 So that I can have a coherent game
-I would like ships to be constrained to be on the board
+I would like ships to be constrained to be on the board -->
 
-As a player
+<!-- As a player
 So that I can have a coherent game
-I would like ships to be constrained not to overlap
+I would like ships to be constrained not to overlap -->
 
 As a player
 So that I can win the game
 I would like to be able to fire at my opponents board
 
-As a player
+<!-- As a player
 So that I can refine my strategy
-I would like to know when I have sunk an opponent's ship
+I would like to know when I have sunk an opponent's ship -->
 
-As a player
+<!-- As a player
 So that I know when to finish playing
-I would like to know when I have won or lost
+I would like to know when I have won or lost -->
 
-As a player
+<!-- As a player
 So that I can consider my next shot
-I would like an overview of my hits and misses so far
+I would like an overview of my hits and misses so far -->
 
-As a player
+<!-- As a player
 So that I can play against a human opponent
-I would like to play a two-player game
+I would like to play a two-player game -->
 ```
 
-| *Objects*           | *Messages*           |
-| :-----------------: | :------------------: |
-| Player              |                      |
-| Ship                | place_ship(board_location)|
-| Ship                | choose_size          |
-| Ship                | up/across            |
-| Board               |                      |
-| Airport             | allow_take_off       |
-| Airport             | allow_land           |
-| Airport             | weather(stormy/sunny)|
+###Board
+  'reports missed hit when no ship at position'
+  'can place a ship'
+  'can receive a hit on ship'
+  'reports hit when ship at position'
+
+###Ship
+  <!-- 'has a position when created' -->

@@ -1,7 +1,16 @@
 require 'board'
 
 describe Board do
-  it 'size to be (4x4)' do
-    expect(subject.size).to eq Board::BOARD_SIZE.count
+  it 'has size' do
+    expect(subject.size).to eq Board::BOARD_SIZE
   end
+
+  it 'has a no ships' do
+    expect(subject.coordinates).to be_empty
+  end
+
+  it 'can place ship' do
+    expect(subject).to respond_to(:place).with(1).argument
+  end
+
 end
