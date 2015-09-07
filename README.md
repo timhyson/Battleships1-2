@@ -43,10 +43,17 @@ I would like to play a two-player game -->
 ```
 
 ###Board
-  'reports missed hit when no ship at position'
-  'can place a ship'
+  <!-- 'can have a ship' -->
   'can receive a hit on ship'
+  'reports missed hit when no ship at position'
   'reports hit when ship at position'
+
+###Player
+  <!-- 'has a board'
+  'has ships' -->
+  'can place ships'
+  'has hits overview'
+  'has miss overview'
 
 ###Ship
   <!-- 'has a position when created' -->

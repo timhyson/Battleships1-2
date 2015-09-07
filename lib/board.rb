@@ -1,24 +1,15 @@
 require_relative 'ship'
 
 class Board
-  w = 'water'
-  b = 'boat'
 
-  BOARD_SIZE = [[w,w,w,w,w],
-                [w,w,w,w,w],
-                [w,w,w,w,w],
-                [w,w,w,w,w],
-                [w,w,w,w,w]]
-
-  attr_reader :size, :coordinates
+  attr_reader :ships
 
   def initialize
-    @size = BOARD_SIZE
-    @coordinates = []
+    @ships = []
   end
 
   def place(ship)
-
+    ships << ship
   end
 
 end

@@ -1,15 +1,15 @@
 require 'board'
 
 describe Board do
-  it 'has size' do
-    expect(subject.size).to eq Board::BOARD_SIZE
+  let(:ship){double :ship}
+
+  it 'can have a ship' do
+    count = subject.ships.count
+    subject.place(ship)
+    expect(subject.ships.count).to eq(count + 1)
   end
 
-  it 'has a no ships' do
-    expect(subject.coordinates).to be_empty
-  end
-
-  it 'can place ship' do
+  it 'can place a ship' do
     expect(subject).to respond_to(:place).with(1).argument
   end
 
