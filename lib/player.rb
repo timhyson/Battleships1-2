@@ -8,9 +8,11 @@ class Player
   def initialize
     @board = Board.new
     @ships = []
+    @hits = []
+    @misses = []
   end
 
-  def place(ship)
-    ships << ship
-  end
+  # def place(ship)
+  #   ships << ship
+  # end
 end
