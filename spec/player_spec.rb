@@ -11,6 +11,17 @@ describe Player do
     expect(subject).to respond_to(:ships)
   end
 
+  it 'can report miss positions' do
+    p = Player.new
+    p.receive_hit('A1')
+    expect(p.misses).to include('A1')
+  end
+  # it 'can report miss positions' do
+  #   p = Player.new
+  #   p.board.receive_a_hit('A1')
+  #   expect(p.misses).to include('A1')
+  # end
+
   # it 'can place ships' do
   #   count = subject.ships.count
   #   subject.place ship

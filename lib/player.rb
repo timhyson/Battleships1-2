@@ -3,7 +3,7 @@ require_relative 'ship'
 
 class Player
 
-  attr_reader :board, :ships
+  attr_reader :board, :ships, :hits, :misses
 
   def initialize
     @board = Board.new
@@ -11,6 +11,11 @@ class Player
     @hits = []
     @misses = []
   end
+
+  def receive_hit(coord)
+    @misses << coord
+  end
+
 
   # def place(ship)
   #   ships << ship
