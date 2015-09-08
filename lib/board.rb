@@ -12,4 +12,9 @@ class Board
     ships << ship
   end
 
+  def receive_a_hit(coord)
+    ships.each { |ship| return 'hit' if ship.position == coord }
+    return 'miss'
+  end
+
 end
